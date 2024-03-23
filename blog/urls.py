@@ -3,5 +3,5 @@ from . import views # (.) -> representa el directorio actual, importa todas las 
 
 urlpatterns = [
     path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
-
